@@ -1,27 +1,29 @@
-# ESP32 Modular Sensor & Control Platform
+# ESP32 LiDAR + IMU Mapping Board
 
-Custom ESP32-based embedded control PCB designed in Altium Designer.
+Custom ESP32-S3 based embedded mapping platform designed in
+Altium Designer.
 
-## Project Goals
+## Project Goal
 
-The platform is being designed to support multiple embedded applications:
+Develop a compact embedded system that combines LiDAR distance
+measurements with inertial data to generate a live 2D map of the
+surrounding environment.
 
-- Drone telemetry and companion-computer functions
-- Two-axis gimbal control
-- Environmental sensing and room automation
+The board is intended to operate as a standalone mapping platform
+and can later integrate with a drone flight controller through UART.
 
-## Planned Features
+## Core Hardware
 
-- ESP32 microcontroller module
-- Wi-Fi and Bluetooth
-- 6-axis IMU
-- UART flight-controller interface
-- I2C/SPI expansion
-- PWM servo outputs
-- Environmental/light sensing
+- ESP32-S3-WROOM-1
+- ICM-42688-P 6-axis IMU
+- UART LiDAR interface
 - USB-C power/programming
-- 3.3 V regulated power system
+- 3.3 V onboard regulation
+- UART expansion
+- I2C expansion
+- GPIO expansion
+- Wi-Fi telemetry
 
-## Status
+## Current Status
 
-Currently in requirements definition and component-selection stage.
+Rev A schematic design.
